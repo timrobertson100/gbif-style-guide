@@ -99,19 +99,38 @@
 			</div> 
     </div> 
     
-    <!-- In an ideal world, Article 2 could look like the following, which would mean that we can 
-         interchange the vanilla bootstrap with the GBIF style, and still have a reasonable layout.      
-    <article>
-      <header class="row">
-	  	  <div class="col-md-12">
-	  	    <h2>Title</h2>
-        </div>
-      </header>
-      <div class="row">
-			  <div class="col-md-12">
-				  <p>I am very wide</p>
-				</div>
-      </div>
+    <!-- In an ideal world, a "two thirds, one third" could look like the following, which would mean that we
+           i. can interchange the vanilla bootstrap with the GBIF style, and still have a reasonable layout
+           ii. we have proper HTML5 semantics.      
+           
+         
+         We have a policy to write CSS on class rules only, thus <article>, <section> and <aside>
+         always get a class of content-* as well.  However, this markup remains semantically sound. 
+        
+    <article class="row content-article"> 
+      
+      <section class="col-md-8 content-section"> 
+        <header>
+          <h2>Left title</h2>
+        </header>
+        <p>Content for the left goes here</p>
+      </section>
+
+      <aside class="col-md-4 content-sidebar">
+        <header>
+          <h2>Right title</h2>        
+        </header>
+        
+        <h3>About</h3>
+        <p>Well, what I write here is an aside...</p>
+        
+        <h3>See also</h3>
+        <ul>
+          <li><a href="#">Link 1</a></li>
+          <li><a href="#">Link 2</a></li>
+        </ul>
+      </aside>
+      
     </article>
     -->
     
