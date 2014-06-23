@@ -1,0 +1,103 @@
+<html>
+  <head>
+    <!-- 
+      The following illustrates the minimum requirements for 2 thirds, 1 third "article" using the style developed by Burke in Drupal.
+    -->  
+    <link type="text/css" rel="stylesheet" href="http://www.gbif-uat.org/sites/all/themes/custom/bvng/css/style.css" media="all">
+  </head>
+
+  <body>
+    
+    <!-- 
+      ARTICLE 1
+    -->
+    <!-- Gives us the white, rounded corner box -->
+    <div class="container well well-lg well-margin-top">
+
+			<!-- Setup a 12 column layout -->
+			<div class="row">
+				<div class="col-md-12">
+					
+					<!-- <article> appears redundant 
+					  - Burke, do we need / want it?  Maybe it is good HTML5 practice? 
+					  - Is this is the correct place?
+					-->
+					<article class="node">
+						
+						<!-- header -->
+						<div class="row">
+						  <!-- class="content-header" is needed to setup typography -->
+							<header class="content-header col-md-8">          
+								<h3>Pre header: use H3 for a pre header (optional)</h3>
+								<h2>The article header is an H2</h2>
+							</header>
+							<!-- Burke: title on the right appear broken? Missing some left padding? -->
+							<header class="content-header col-md-4">          
+								<h3>Right</h3>
+								<h2>Title</h2>
+							</header>
+						</div>
+						
+						<!-- content -->
+						<div class="row">
+							
+							<!-- 8 columns of 12 is two thirds -->
+							<div class="node-content col-md-8">
+								<p>I am the first paragraph.  Standard HTML tags work such as <a href="#">links</a>.</p>
+								<p>A second paragraph, and showing that <a href="http://getbootstrap.com/css">bootstrap V3</a> 
+								  typography such as <strong>strong</strong> and <small>small</small> also work.  Wherever
+								  possible, use standard bootstrap typography rather than inventing new ones.</p>
+							</div> <!-- 8 columns -->
+	
+							<!-- One third -->
+							<div class="node-sidebar col-md-4">
+  							<!-- class="item-list controls the padding" -->
+  							<div class="item-list">
+	  							<h3>Title is </h3>
+		  						<!-- Burke: I need newsarticle-sidebar here, but expected not to have to put one as it is already 
+		  						     in node-sidebar.  Suggest relaxing that, or refining my example to show what I missed -->
+		  						<ul class="newsarticle-sidebar">
+			  						<li>Option number 1</li>  
+			  						<li>Option number 2</li>
+			  						<li>Option number 3</li>
+				  				</ul>
+					  		</div>
+						  	<div class="item-list">
+							  	<h3>Links</h3>
+							  	<!-- class="tags" is needed to bring in bullets to the list -->
+  								<ul class="newsarticle-sidebar tags">
+	  								<li><a href="#">Link 1</a></li>
+		  							<li><a href="#">Link 2</a></li>
+			  						<li><a href="#">Link 3</a></li>
+				  				</ul>
+					  		</div>
+					  		
+					    </div>	<!-- 4 columns -->
+						</div> <!-- content row -->
+					</article>
+				</div> <!-- 12 column layout -->
+			</div> <!-- row -->
+    </div> <!-- container for the "article" -->    
+    
+    <!-- 
+      ARTICLE 2, without comments in HTML, minimal example
+    -->
+    <div class="container well well-lg well-margin-top">
+			<div class="row">
+				<div class="col-md-12">
+						<div class="row">          	
+							<header class="content-header col-md-12">          
+								<h2>Full width baby</h2>
+							</header>
+						</div>
+						<div class="row">
+							<div class="node-content col-md-12">
+								<p>I am very wide</p>
+							</div>
+						</div> 
+				</div>
+			</div> 
+    </div> 
+    
+  </body>    
+</html>
