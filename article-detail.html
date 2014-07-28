@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <style>
+      
+      .content-body {
+        background-color: #efefef;
+        width: 980px;
+      }
+      
+      /* 
+        A block is a visually grouped section on a page.  
+        We refrain from using "article" or "section" terminology for clarity, as it
+        may be applied to a section or an article depending on the page.      
+      */
+      .content-block {
+        margin-top: 20px;
+        background-color: #fff;
+      }
+      
+    </style>
+  </head>
+  <body class="container content-body">
+  
+    <main>
+      <article>
+     
+        <section class="row content-block well">
+          <div class="col-md-8 content-section">
+            <header>
+              <h2>Left title</h2>
+            </header>
+            <p>Content for the left goes here</p>      
+          </div>
+          <aside class="col-md-4 content-sidebar">
+            <header>
+              <h2>See also</h2>
+            </header>
+            <h3>I'm in an aside</h3>
+            <p>
+              Use aside only when this is supplementary info (e.g. external links)
+            </p>
+          </aside>
+        </section>
+
+        <section class="row content-block well">
+          <div class="col-md-8 content-section">
+            <header>
+              <h2>Left title</h2>
+            </header>
+            <p>Content for the left goes here</p>      
+          </div>
+          <div class="col-md-4 content-sidebar">
+            <header>
+              <h2>Metrics</h2>
+            </header>
+            <h3>I'm in a div</h3>
+            <p>
+              Use div when this is actually just grouping for display purpose.  If in doubt, use div 
+            </p>
+          </div>
+        </section>
+        
+        <section class="row content-block well">
+          <div class="col-md-12 content-section">
+            <header>
+              <h2>Full width</h2>
+            </header>
+            <p>I am full width</p>      
+          </div>
+        </section>
+
+        
+      </article>
+    </main>
+  </body>
+</html>
